@@ -4,12 +4,20 @@ export const Nav01DataSource = {
   page: { className: 'home-page' },
   logo: {
     className: 'header0-logo',
-    children: 'http://pr4mi6im8.bkt.clouddn.com/logo.png',
+    children: './logo.png',
   },
   Menu: {
     className: 'header0-menu',
     children: [
       { name: 'item0', a: { children: '蘑菇头', href: '' } },
+      {
+        name: 'item3',
+        a: {
+          children: 'Github开源',
+          href: 'https://github.com/Allenxuxu/mogutouERP',
+          target: '_black',
+        },
+      },
       {
         name: 'item1',
         a: {
@@ -67,7 +75,7 @@ export const Banner41DataSource = {
   },
   image: {
     className: 'banner4-image',
-    children: 'http://pr4mi6im8.bkt.clouddn.com/kucun.png',
+    children: './main.png',
   },
 };
 export const Content30DataSource = {
@@ -300,7 +308,7 @@ export const Teams10DataSource = {
         name: 'title',
         children: (
           <>
-            <p>定价 | 咨询</p>
+            <p>使用 | 开源 | 咨询</p>
           </>
         ),
       },
@@ -317,16 +325,11 @@ export const Teams10DataSource = {
         titleWrapper: {
           children: [
             {
-              name: 'image',
-              className: 'teams1-image',
-              children: 'http://pr4mi6im8.bkt.clouddn.com/ogutou%20%283%29.png',
-            },
-            {
               name: 'title',
               className: 'teams1-title jvdq8s57blo-editor_css',
               children: (
                 <>
-                  <p>注册 免费使用3个月</p>
+                  <p>注册 前三月 免费使用</p>
                 </>
               ),
             },
@@ -344,7 +347,7 @@ export const Teams10DataSource = {
               className: '',
               children: (
                 <>
-                  <p>¥49/月</p>
+                  <p>¥9/月</p>
                 </>
               ),
             },
@@ -359,9 +362,24 @@ export const Teams10DataSource = {
         titleWrapper: {
           children: [
             {
-              name: 'image',
-              className: 'teams1-image jvdraznhjw-editor_css',
-              children: 'http://pr4mi6im8.bkt.clouddn.com/wx.jpeg',
+              name: 'title',
+              className: 'teams1-title',
+              children: (
+                <>
+                  <p>Github 完全开源</p>
+                  <p>完全开源！</p>
+                  <p>可以直接部署使用</p>
+                </>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'teams1-job',
+              children: (
+                <>
+                  <a href="https://github.com/Allenxuxu/mogutouERP">仓库地址</a>
+                </>
+              ),
             },
           ],
         },
@@ -374,16 +392,20 @@ export const Teams10DataSource = {
         titleWrapper: {
           children: [
             {
-              name: 'image',
-              className: 'teams1-image',
-              children: 'http://pr4mi6im8.bkt.clouddn.com/qq.jpg',
+              name: 'title',
+              className: 'teams1-title',
+              children: (
+                <>
+                  <p>779 781 535</p>
+                </>
+              ),
             },
             {
               name: 'title',
               className: 'teams1-title',
               children: (
                 <>
-                  <p>咨询QQ</p>
+                  <p>咨询QQ群</p>
                 </>
               ),
             },
@@ -392,7 +414,7 @@ export const Teams10DataSource = {
               className: 'teams1-job',
               children: (
                 <>
-                  <p>如有疑问，可以添加qq咨询</p>
+                  <p>如有疑问（注册使用，费用），可以添加qq群咨询</p>
                 </>
               ),
             },
